@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GameProject</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="default_web_client_id">986917619163-1bq0j7b4ehrka1b7h4ii3sudd0gclf1l.apps.googleusercontent.com </string>
+
+</resources>

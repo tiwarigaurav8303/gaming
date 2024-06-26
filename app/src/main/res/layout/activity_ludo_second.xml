@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#4BBAC8"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#4BBAC8"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".LudoSecond">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/yourLinearLayout"
+            android:layout_marginTop="25dp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/red"
+                android:id="@+id/yourImageView"
+                android:layout_weight="1"
+                android:layout_marginLeft="15sp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Dice Roller Game"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#EA0909"
+                android:id="@+id/yourTextView"
+                android:layout_marginTop="30sp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sidesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Sides on a Dice"/>
+
+            <EditText
+                android:id="@+id/sidesInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20sp"
+                android:hint="Enter sides"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Number of Dice"/>
+
+            <EditText
+                android:id="@+id/numberInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:hint="Enter number"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:background="#2196F3"
+            android:textSize="19dp"
+            android:textColor="@color/white"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:text="Start"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sumTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:text="Sum: "/>
+
+            <TextView
+                android:id="@+id/multiplyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Multiplication: "/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/individualNumbersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/multiplyTextView"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="16dp"
+            android:text="Individual Numbers: "
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/nameSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Name"
+            android:textColor="#AE0909" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/nameSpinnerGameF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Name"
+            android:textColor="#AE0909" />
+
+        <ImageView
+            android:layout_width="20sp"
+            android:src="@drawable/r"
+            android:id="@+id/arrow"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="140dp"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/spinnerWheel"
+            android:layout_width="300dp"
+            android:layout_marginTop="70dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/background"/>
+
+        <RadioGroup
+            android:id="@+id/numberOptionsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerWheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbOption1"
+                android:layout_width="75dp"
+                android:textSize="17dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shapeforradiobutton"
+                android:layout_height="40dp"
+                android:text="0-6" />
+
+            <RadioButton
+                android:id="@+id/rbOption2"
+                android:layout_width="75dp"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:scaleY="1.1"
+                android:scaleX="1.1"
+                android:background="@drawable/shapeforradiobutton"
+                android:layout_height="40dp"
+                android:text="7" />
+
+            <RadioButton
+                android:id="@+id/rbOption3"
+                android:layout_width="75dp"
+                android:textSize="17dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shapeforradiobutton"
+                android:layout_height="40dp"
+                android:text="8-12" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlay"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/numberOptionsGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shapeforbutton"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:shadowRadius="10"
+            android:text="Play"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPlay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textSize="25dp"
+            android:background="#FFA500"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/coinsbest"
+            android:text="Coins: 3000" />
+
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:textColor="#FFA500"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@id/tvCoins"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="" />
+
+    </RelativeLayout>
+
+</ScrollView>

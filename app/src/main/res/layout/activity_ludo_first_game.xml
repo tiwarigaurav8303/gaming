@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8D1DA"
+    android:padding="16dp"
+    tools:context=".LudoFirstGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/name"
+            android:textColor="#3F51B5"
+            android:text="Name"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/nameFirstGameF"
+            android:textColor="#3F51B5"
+            android:text="Name"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dice1"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:src="@drawable/dice1"
+                android:layout_below="@id/rollButton"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/dice2"
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:src="@drawable/dice2"
+                android:layout_below="@id/rollButton"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/dice1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sumResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sum: "
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/dice1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/multiplicationResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Product: "
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_below="@id/sumResult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/guessSum"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Enter Guess for Sum"
+            android:inputType="number"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/guessMultiplication"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Enter Guess for Multiplication"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/totalCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Coins: 2000"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/coinsbest"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rollButton"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="#039BE5"
+            android:text="Roll"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
